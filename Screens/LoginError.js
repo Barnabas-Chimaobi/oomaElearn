@@ -9,17 +9,15 @@ import SecondLoginForm from '../Components/SecondLoginForm'
 import LoginBtn2 from '../Components/LoginBtn2'
 import LoginErrorSubTxT from '../Components/LoginErrorSubTxt'
 import WrongUserWarning from '../Components/WrongUserWarning'
+import LoginErrorBanner from '../Components/LoginErrorBanner'
 
 export default function LoginEror() {
     const imageUrl = require("../assets/image5.png")
   return (
     <SafeAreaView style={styles.container}>
         <StatusBar hidden style="auto" backgroundColor='white' />
-    <View style={styles.imgBgView}>
-    
-        <ImageBackground source={imageUrl} style={styles.imagestyle}>
-        <Text style={styles.text}>OOPS!!!</Text>
-      </ImageBackground>
+    <View>
+        <LoginErrorBanner/>
     </View>
     <View style={styles.loginTxtView}>
       <LoginErrorSubTxT/>

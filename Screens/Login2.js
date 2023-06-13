@@ -7,18 +7,15 @@ import LoginBtn1 from '../Components/LoginBtn1'
 import SignInWithGoogle from '../Components/SignInWithGoogle'
 import SecondLoginForm from '../Components/SecondLoginForm'
 import LoginBtn2 from '../Components/LoginBtn2'
+import LoginBanner from '../Components/LoginBanner'
 
 export default function Login2() {
     const imageUrl = require("../assets/image5.png")
   return (
     <SafeAreaView style={styles.container}>
         <StatusBar hidden style="auto" backgroundColor='white' />
-    <View style={styles.imgBgView}>
-    
-        <ImageBackground source={imageUrl} style={styles.imagestyle}>
-        <Text style={styles.text}>Welcome
-back!</Text>
-      </ImageBackground>
+    <View>
+        <LoginBanner/>
     </View>
     <View style={styles.loginTxtView}>
       <LoginScreenSubTxT/>

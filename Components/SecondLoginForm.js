@@ -28,10 +28,8 @@ const styles = StyleSheet.create({
     },
     textInput: {
         backgroundColor: "#FFFFFF",
-opacity: 0.3,
-// border: "1px solid #D7D7D7",
+// opacity: 0.3,
 borderRadius: 8,
-// height: 40,
 paddingLeft: 16,
 paddingTop: 11,
 paddingBottom: 11,
@@ -45,6 +43,6 @@ borderWidth: 1,
 display: "flex",
 alignItems: "flex-end",
 
-color: "black",
+color: "#000000",
     }
 })
