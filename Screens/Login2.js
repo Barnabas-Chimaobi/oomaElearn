@@ -1,4 +1,4 @@
-import { View, Text, Image, StyleSheet, SafeAreaView, ImageBackground } from 'react-native'
+import { View, Text, Image, StyleSheet, SafeAreaView, ImageBackground, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { StatusBar } from 'expo-status-bar'
 import LoginScreenSubTxT from '../Components/LoginScreenSubTxT'
@@ -26,15 +26,15 @@ back!</Text>
     <View>
       <SecondLoginForm/>
     </View>
-    <View style={styles.forgotPasstxtView}>
+    <TouchableOpacity style={styles.forgotPasstxtView}>
       <Text style={styles.forgotPasstxt}>Forgot password?</Text>
-    </View>
+    </TouchableOpacity>
     <View>
       <LoginBtn2/>
     </View>
-    <View style={styles.registerTxtView}>
+    <TouchableOpacity style={styles.registerTxtView}>
       <Text style={styles.registerTxt}>Register</Text>
-    </View>
+    </TouchableOpacity>
 
     {/* OR TEXT AND LINES */}
 

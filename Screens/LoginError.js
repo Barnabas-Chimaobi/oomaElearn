@@ -5,8 +5,12 @@ import LoginScreenSubTxT from '../Components/LoginScreenSubTxT'
 import FirstLoginForm from '../Components/FirstLoginForm'
 import LoginBtn1 from '../Components/LoginBtn1'
 import SignInWithGoogle from '../Components/SignInWithGoogle'
+import SecondLoginForm from '../Components/SecondLoginForm'
+import LoginBtn2 from '../Components/LoginBtn2'
+import LoginErrorSubTxT from '../Components/LoginErrorSubTxt'
+import WrongUserWarning from '../Components/WrongUserWarning'
 
-export default function Login() {
+export default function LoginEror() {
     const imageUrl = require("../assets/image5.png")
   return (
     <SafeAreaView style={styles.container}>
@@ -14,21 +18,24 @@ export default function Login() {
     <View style={styles.imgBgView}>
     
         <ImageBackground source={imageUrl} style={styles.imagestyle}>
-        <Text style={styles.text}>Welcome
-back!</Text>
+        <Text style={styles.text}>OOPS!!!</Text>
       </ImageBackground>
     </View>
     <View style={styles.loginTxtView}>
-      <LoginScreenSubTxT/>
+      <LoginErrorSubTxT/>
     </View>
     <View>
-      <FirstLoginForm/>
+      <SecondLoginForm/>
+    </View>
+
+    <View style={styles.WrongUserWarning}>
+        <WrongUserWarning/>
     </View>
     <TouchableOpacity style={styles.forgotPasstxtView}>
       <Text style={styles.forgotPasstxt}>Forgot password?</Text>
     </TouchableOpacity>
     <View>
-      <LoginBtn1/>
+      <LoginBtn2/>
     </View>
     <TouchableOpacity style={styles.registerTxtView}>
       <Text style={styles.registerTxt}>Register</Text>
@@ -36,16 +43,16 @@ back!</Text>
 
     {/* OR TEXT AND LINES */}
 
-    <View>
+    {/* <View>
       <View style={styles.line} />
       <View style={styles.textContainer}>
         <Text style={styles.text}>OR</Text>
       </View>
-      {/* <View style={styles.line} /> */}
+      <View style={styles.line} />
     </View>
     <View style={styles.googleSignView}>
       <SignInWithGoogle/>
-    </View>
+    </View> */}
     </SafeAreaView>
   )
 }
@@ -135,5 +142,10 @@ color: "#3E2056",
       marginLeft: 24,
       marginRight: 24,
       marginTop: 16
+    },
+    WrongUserWarning:{
+        marginLeft: 24,
+        marginTop: 24,
+        marginBottom: 32
     }
 })
