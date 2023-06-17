@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, TextInput } from 'react-native'
 import React from 'react'
+import Colors from '../utils/Colors'
 
 export default function FirstLoginForm(props) {
   return (
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
         marginTop: 8
     },
     textInput: {
-        backgroundColor: "#AEAEAE",
+        backgroundColor: Colors.textInputBg1,
 // opacity: 0.3,
 borderRadius: 8,
 paddingLeft: 16,

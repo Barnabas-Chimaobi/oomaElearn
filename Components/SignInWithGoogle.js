@@ -1,5 +1,6 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
+import Colors from '../utils/Colors'
 
 export default function SignInWithGoogle() {
   return (
@@ -14,9 +15,9 @@ export default function SignInWithGoogle() {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "#FFFFFF",
+        backgroundColor: Colors.background,
         borderWidth: 2,
-        borderColor: '#D7D7D7',
+        borderColor: Colors.borderColor1,
 borderRadius: 8,
 display: "flex",
 flexDirection: "row",

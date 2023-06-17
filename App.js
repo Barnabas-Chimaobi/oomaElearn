@@ -5,11 +5,12 @@ import Login2 from './Screens/Login2';
 import LoginEror from './Screens/LoginError';
 import SignUp2 from './Screens/SignUp2';
 import SignUpOtp from './Screens/SignUpOtp';
+import SignUpDetails from './Screens/SignUpDetails';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <SignUpOtp/>
+      <SignUpDetails/>
       <StatusBar style="auto" />
     </View>
   );

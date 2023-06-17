@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
+import Colors from '../utils/Colors'
 
 export default function WrongUserWarning() {
   return (
@@ -15,6 +16,6 @@ const styles = StyleSheet.create({
 fontWeight: "400",
 fontSize: 14,
 lineHeight: 21,
-color: "rgba(255, 64, 64, 0.87)",
+color: Colors.warningTxt1,
     }
 })

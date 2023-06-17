@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, TextInput } from 'react-native'
 import React from 'react'
+import Colors from '../utils/Colors'
 
 export default function SecondLoginForm(props) {
   return (
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
         marginTop: 8
     },
     textInput: {
-        backgroundColor: "#FFFFFF",
+        backgroundColor: Colors.background,
 // opacity: 0.3,
 borderRadius: 8,
 paddingLeft: 16,
@@ -37,12 +38,12 @@ fontWeight: "400",
 fontSize: 14,
 lineHeight: 21,
 marginTop: 16,
-borderColor: "#3E2056",
+borderColor: Colors.btnTxt1,
 borderWidth: 1,
 
 display: "flex",
 alignItems: "flex-end",
 
-color: "#000000",
+color: Colors.formTxt,
     }
 })

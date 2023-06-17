@@ -1,5 +1,7 @@
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 import React from 'react'
+import Colors from '../utils/Colors'
+import LoginBtn1 from './LoginBtn1'
 
 export default function OtpInput() {
   return (
@@ -9,9 +11,10 @@ export default function OtpInput() {
       {/* OTP Box ends */}
 
       <View style={styles.btnContainer}>
-        <TouchableOpacity style={styles.btnMain}>
+        {/* <TouchableOpacity style={styles.btnMain}>
             <Text style={styles.btnTxt}>Verify</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
+        <LoginBtn1 txt={"Verify"} />
       </View>
       <TouchableOpacity style={styles.resendContainer}>
         <Text style={styles.resendText}>Resend code</Text>
@@ -31,9 +34,9 @@ const styles = StyleSheet.create({
         marginTop: 60
     },
     btnMain: {
-        backgroundColor: "rgba(225, 182, 255, 0.4)",
+        backgroundColor: Colors.btnColor2,
 borderWidth: 0.5,
-borderColor: "#FFFFFF",
+borderColor: Colors.background,
 borderRadius: 24,
 display: "flex",
 flexDirection: "row",
@@ -48,14 +51,14 @@ paddingBottom: 16
 fontWeight: "500",
 fontSize: 14,
 lineHeight: 21,
-color: "#3E2056",
+color: Colors.btnTxt1,
     },
     resendText: {
         fontStyle: "normal",
 fontWeight: "500",
 fontSize: 14,
 lineHeight: 21,
-color: "#614378",
+color: Colors.signUpSubTxt,
 textAlign: "center"
     },
     resendContainer: {

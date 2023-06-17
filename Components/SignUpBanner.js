@@ -1,5 +1,6 @@
 import { View, Text, ImageBackground, StyleSheet } from 'react-native'
 import React from 'react'
+import Colors from '../utils/Colors'
 
 export default function SignUpBanner() {
     const imageUrl = require("../assets/image5.png")
@@ -37,7 +38,7 @@ alignItems: "flex-end"
     text: {
         fontWeight: "400",
 fontSize: 16.578,
-color: "#614378",
+color: Colors.signUpSubTxt,
 lineHeight: 19,
 // fontFamily: 'Bubblegum Sans'
     },

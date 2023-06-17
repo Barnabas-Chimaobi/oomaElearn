@@ -27,7 +27,7 @@ export default function Login2() {
       <Text style={styles.forgotPasstxt}>Forgot password?</Text>
     </TouchableOpacity>
     <View>
-      <LoginBtn2/>
+      <LoginBtn2 props={"Log in"}/>
     </View>
     <TouchableOpacity style={styles.registerTxtView}>
       <Text style={styles.registerTxt}>Register</Text>

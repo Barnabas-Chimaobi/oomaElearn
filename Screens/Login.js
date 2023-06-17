@@ -6,6 +6,7 @@ import FirstLoginForm from '../Components/FirstLoginForm'
 import LoginBtn1 from '../Components/LoginBtn1'
 import SignInWithGoogle from '../Components/SignInWithGoogle'
 import LoginBanner from '../Components/LoginBanner'
+import Colors from '../utils/Colors'
 
 export default function Login() {
   return (
@@ -24,7 +25,7 @@ export default function Login() {
       <Text style={styles.forgotPasstxt}>Forgot password?</Text>
     </TouchableOpacity>
     <View>
-      <LoginBtn1/>
+      <LoginBtn1 txt="Log in"/>
     </View>
     <TouchableOpacity style={styles.registerTxtView}>
       <Text style={styles.registerTxt}>Register</Text>
@@ -49,7 +50,7 @@ export default function Login() {
 const styles = StyleSheet.create({
     container: {
         flex: 1, 
-        backgroundColor: 'white'
+        backgroundColor: Colors.background
     },
     
     loginTxtView: {

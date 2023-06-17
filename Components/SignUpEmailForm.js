@@ -1,5 +1,6 @@
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
+import Colors from '../utils/Colors'
 
 export default function SignUpEmailForm(props) {
   return (
@@ -18,10 +19,10 @@ export default function SignUpEmailForm(props) {
 
 const styles = StyleSheet.create({
     textInput: {
-        backgroundColor: "#FFFFFF",
+        backgroundColor: Colors.background,
 // opacity: 0.3,
 borderWidth: 1,
-borderColor: "#D7D7D7",
+borderColor: Colors.borderColor1,
 borderRadius: 8,
 paddingLeft: 16,
 paddingTop: 11,
@@ -29,10 +30,10 @@ paddingBottom: 11,
 marginBottom: 70
     },
     btn: {
-        backgroundColor: "rgba(225, 182, 255, 0.4)",
+        backgroundColor: Colors.btnColor2,
 borderRadius: 24,
 borderWidth: 0.5,
-borderColor: "#FFFFFF",
+borderColor: Colors.background,
 paddingTop: 16,
 paddingBottom: 16,
 display: "flex",
@@ -45,6 +46,6 @@ justifyContent: "center"
 fontWeight: "500",
 fontSize: 14,
 lineHeight: 21,
-color: "#3E2056",
+color: Colors.btnTxt1,
     },
 })
