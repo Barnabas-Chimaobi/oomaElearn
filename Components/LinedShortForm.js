@@ -1,8 +1,9 @@
-import { View, Text, TextInput, StyleSheet } from 'react-native'
+import { View, Text, TextInput, StyleSheet, Dimensions } from 'react-native'
 import React from 'react'
 import Colors from '../utils/Colors'
 
 export default function LinedForm(props) {
+  // const {width, height} = Dimensions.get("window")
   return (
     <View>
       <TextInput style={styles.input} placeholder={props.placeholder}/>
@@ -21,7 +22,7 @@ const styles = StyleSheet.create({
     fontWeight: "400",
 fontSize: 16,
 lineHeight: 24,
-width: 148
+width: Dimensions.get("window").width*0.4
 /* identical to box height */
 
 // display: "flex",
