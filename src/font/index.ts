@@ -1,7 +1,13 @@
-const SORABOLD = 'Sora-Bold';
-const SORALIGHT = 'Sora-Light';
-const SORAMEDIUM = 'Sora-Medium';
-const SORAREGULAR = 'Sora-Regular';
-const SORASEMIBOLD = 'Sora-SemiBold';
+const POPPINSBOLD = 'Poppins-Bold';
+const POPPINSLIGHT = 'Poppins-Light';
+const POPPINSMEDIUM = 'Poppins-Medium';
+const POPPINSREGULAR = 'Poppins-Regular';
+const BUBBLEREGULAR = 'BubblegumSans-Regular';
 
-export {SORABOLD, SORALIGHT, SORAMEDIUM, SORAREGULAR, SORASEMIBOLD};
+export {
+  POPPINSBOLD,
+  POPPINSLIGHT,
+  POPPINSREGULAR,
+  POPPINSMEDIUM,
+  BUBBLEREGULAR,
+};

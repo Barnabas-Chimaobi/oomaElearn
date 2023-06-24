@@ -10,18 +10,18 @@ import {Button, Icon, WhiteSpace, WingBlank} from '@ant-design/react-native';
 import {Colors} from '../../helpers/colors';
 import {Background} from '../backgroundColor';
 import LinearGradient from 'react-native-linear-gradient';
-import {SORABOLD} from '../../font';
+import {POPPINSMEDIUM, SORABOLD} from '../../font';
 
 const Buttons = props => {
   return (
     <View>
       {/* <WhiteSpace /> */}
       <TouchableOpacity>
-        <Background backgroundStyle={style.linearGradient}>
+        <View style={[style.linearGradient, props.buttonStyle]}>
           <Text style={[style.titleStyle, props.buttonText]}>
             {props.title}
           </Text>
-        </Background>
+        </View>
       </TouchableOpacity>
     </View>
   );
@@ -38,15 +38,15 @@ const style = StyleSheet.create({
     borderRadius: 50,
     height: Dimensions.get('window').height * 0.06,
     alignItems: 'center',
-    marginTop: 50,
-    elevation: 10,
+    marginTop: 10,
+    backgroundColor: Colors.day_mode.primary1,
     // alignContent: 'center',
   },
   titleStyle: {
     paddingVertical: Dimensions.get('window').height * 0.015,
     // fontSize: 15,
-    color: Colors.day_mode.white,
-    fontFamily: SORABOLD,
+    color: Colors.day_mode.black,
+    fontFamily: POPPINSMEDIUM,
     // textAlign: 'center',
   },
 });

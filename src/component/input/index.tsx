@@ -39,6 +39,7 @@ const style = StyleSheet.create({
     fontSize: 13,
     height: 40,
     opacity: 0.5,
+    marginBottom: 10,
   },
   inputView: {},
 });

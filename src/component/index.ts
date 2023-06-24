@@ -14,7 +14,9 @@ import {HeaderParams} from './header/headerParams';
 import {Modals} from './modal';
 import {Background} from './backgroundColor';
 import {StatuBar} from './status';
-
+import {Container} from './container';
+import {Dropdowns} from './dropdown';
+import {Dividers} from './divider';
 // import {Payments} from '../screens/payment/paystack';
 
 export {
@@ -34,5 +36,8 @@ export {
   Modals,
   Background,
   StatuBar,
+  Container,
+  Dropdowns,
+  Dividers,
   // Payments,
 };

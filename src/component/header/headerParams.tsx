@@ -10,24 +10,27 @@ import {
 import {images} from '../../assets';
 import {Colors} from '../../helpers/colors';
 import {SORAMEDIUM, SORALIGHT, SORABOLD} from '../../font';
+import {Texts} from '../Text';
+import Notification from '../../assets/images/notification.svg';
 
 const HeaderParams = props => {
   return (
     // <WingBlank>
     <View style={style.mainContainer}>
-      <WhiteSpace />
+      {/* <WhiteSpace /> */}
       <View style={[style.imageContainer, props.container]}>
-        <Image
+        {/* <Image
           resizeMode="contain"
           style={style.imageStyle}
           source={images.leftIcon}
-        />
+        /> */}
+        <Texts>Bildup</Texts>
         <View>
-          <Image source={images.more} style={style.image} />
+          <Notification width={40} height={40} style={style.image} />
         </View>
       </View>
-      <Text style={[style.textStyleMain, props.textStyle]}>{props.title}</Text>
-      <Text style={[style.textStyle, props.textStyle1]}>{props.titleone}</Text>
+      {/* <Text style={[style.textStyleMain, props.textStyle]}>{props.title}</Text>
+      <Text style={[style.textStyle, props.textStyle1]}>{props.titleone}</Text> */}
     </View>
     // </WingBlank>
   );
@@ -37,14 +40,12 @@ export {HeaderParams};
 
 const style = StyleSheet.create({
   imageStyle: {
-    height: 20,
-    width: 20,
     tintColor: Colors.day_mode.white,
   },
   imageContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginBottom: 5,
+    // marginBottom: 5,
   },
   textStyle: {
     color: Colors.day_mode.white,
@@ -58,8 +59,8 @@ const style = StyleSheet.create({
     paddingVertical: 8,
   },
   mainContainer: {
-    backgroundColor: Colors.day_mode.primary,
-    paddingVertical: 15,
+    backgroundColor: Colors.day_mode.white,
+    paddingVertical: 5,
     paddingHorizontal: 15,
   },
   image: {
